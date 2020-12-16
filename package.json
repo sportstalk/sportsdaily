@@ -1,0 +1,36 @@
+{
+  "name": "sportsdaily",
+  "version": "1.0.0",
+  "description": "SportsTalkSocial Daily Voting / Post",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "execute": "yarn run build && node -r dotenv/config dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voltairez/sportsdaily.git"
+  },
+  "keywords": [
+    "Hive",
+    "bot",
+    "curation"
+  ],
+  "author": "voltairez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voltairez/sportsdaily/issues"
+  },
+  "homepage": "https://github.com/voltairez/sportsdaily#readme",
+  "dependencies": {
+    "@hiveio/hive-js": "^0.8.5",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0"
+  }
+}
